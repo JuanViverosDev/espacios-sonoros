@@ -1,6 +1,7 @@
 import React from "react";
 import calimenu from "../../resources/cali-menu.jpg";
 import { PlayCircleIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -12,11 +13,13 @@ const Home = () => {
             Santiago <br /> de Cali
           </h1>
           <div className="cursor-pointer">
+            <Link to="/map">
             <PlayCircleIcon className="text-white h-40 w-40" />
+            </Link>
           </div>
         </div>
       </div>
-      <img src={calimenu} alt="Cali fondo" className="absolute -z-10 -top-52" />
+      <img src={calimenu} alt="Cali fondo" className="absolute -z-10 -top-52 opacity-80" />
     </>
   );
 };
