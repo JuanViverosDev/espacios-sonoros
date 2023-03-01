@@ -13,7 +13,7 @@ const Home = () => {
             Santiago <br /> de Cali
           </h1>
           <div className="cursor-pointer">
-            <Link to="/map">
+            <Link to="/sites">
             <PlayCircleIcon className="text-white h-40 w-40" />
             </Link>
           </div>
