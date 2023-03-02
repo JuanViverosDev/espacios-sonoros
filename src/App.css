@@ -2,3 +2,8 @@
     height: 100vw;
     width: 100vw;
 }
+.leaflet-div-icon{
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
