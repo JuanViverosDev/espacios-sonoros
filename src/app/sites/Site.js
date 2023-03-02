@@ -18,18 +18,21 @@ const Site = () => {
 
   return (
     <div>
-      <Link
-        className="text-yellow-400 absolute z-10 m-10 flex items-center cursor-pointer"
-        to="/sites"
-        onClick={() => audio.pause()}
-      >
-        <ArrowLeftCircleIcon className="h-10 w-10 " />
-        <h1 className="ml-3 font-semibold text-xl">Mapa</h1>
-      </Link>
+      <div onClick={() => audio.pause()}>
+        <Link
+          className="text-yellow-400 absolute z-10 m-10 flex items-center cursor-pointer"
+          to="/sites"
+        >
+          <ArrowLeftCircleIcon className="h-10 w-10 " />
+          <h1 className="ml-3 font-semibold text-xl">Mapa</h1>
+        </Link>
+      </div>
       <div className="md:grid md:grid-cols-4">
         <div className="flex flex-col justify-between h-screen max-h-screen p-20 col-span-2 pt-32">
           <div className="flex justify-between items-center cursor-default">
-            <h1 className="text-white font-black md:text-9xl text-6xl">{site.name}</h1>
+            <h1 className="text-white font-black md:text-9xl text-6xl">
+              {site.name}
+            </h1>
           </div>
           <div className="flex md:justify-between items-center cursor-default">
             <p className="text-white font-semibold md:text-2xl text-lg">
