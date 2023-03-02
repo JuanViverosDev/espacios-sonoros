@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col justify-between h-screen max-h-screen p-28">
-        <div className="flex ">
-          <div className="text-white font-bold text-4xl pl-3 bg-yellow-400 p-4 rounded-2xl cursor-default">
-            <h5 className="p-4 bg-orange-500 rounded-lg">Espacios Sonoros</h5>
+      <div className="flex flex-col justify-between h-screen max-h-screen md:p-28 p-10">
+        <div className="flex justify-center md:justify-start">
+          <div className="text-white font-bold text-2xl md:text-4xl pl-3 bg-yellow-400 p-2 md:p-4 rounded-2xl cursor-default">
+            <h5 className="md:p-4 p-2 bg-orange-500 rounded-lg">Espacios Sonoros</h5>
           </div>
         </div>
-        <div className="flex justify-between items-center cursor-default">
-          <h1 className="text-white font-black text-9xl">
+        <div className="flex flex-col md:flex-row justify-between items-center cursor-default gap-20 md:gap-0">
+          <h1 className="text-white font-black md:text-9xl text-6xl">
             Santiago <br /> de <span className="text-yellow-400">Cali</span>
           </h1>
           <div className="cursor-pointer">
