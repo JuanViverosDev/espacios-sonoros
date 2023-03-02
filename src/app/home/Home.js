@@ -1,5 +1,5 @@
 import React from "react";
-import calimenu from "../../resources/cali-menu.jpg";
+import calimenu from "../../resources/cali-menu.gif";
 import { PlayCircleIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <div className="flex flex-col justify-between h-screen max-h-screen p-28">
         <div className="flex ">
-          <div className="text-white font-bold text-4xl pl-3 bg-yellow-400 p-4 rounded-2xl shadow-xl shadow-yellow-400 cursor-default">
+          <div className="text-white font-bold text-4xl pl-3 bg-yellow-400 p-4 rounded-2xl cursor-default">
             <h5 className="p-4 bg-orange-500 rounded-lg">Espacios Sonoros</h5>
           </div>
         </div>
