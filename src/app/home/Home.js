@@ -16,7 +16,8 @@ const Home = () => {
           <h1 className="text-white font-black md:text-9xl text-6xl">
             Santiago <br /> de <span className="text-yellow-400">Cali</span>
           </h1>
-          <div className="cursor-pointer">
+          <div className="cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out
+          ">
             <Link to="/sites">
               <PlayCircleIcon className="text-orange-500 h-40 w-40 rounded-full bg-yellow-400 shadow-yellow-400 shadow-2xl" />
             </Link>

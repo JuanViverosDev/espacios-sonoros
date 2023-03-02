@@ -20,7 +20,7 @@ const Site = () => {
     <div>
       <div onClick={() => audio.pause()}>
         <Link
-          className="text-yellow-400 absolute z-10 m-10 flex items-center cursor-pointer"
+          className="text-yellow-400 absolute z-10 m-10 flex items-center cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out"
           to="/sites"
         >
           <ArrowLeftCircleIcon className="h-10 w-10 " />

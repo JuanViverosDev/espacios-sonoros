@@ -39,7 +39,7 @@ const Map = () => {
                     {site.description}
                   </p>
                 </div>
-                <div className="cursor-pointer ml-10">
+                <div className="cursor-pointer ml-10 hover:scale-110 transform transition duration-500 ease-in-out">
                   <Link to={`/sites/${site.url}`}>
                     <PlayCircleIcon className="text-yellow-400 h-20 w-20 rounded-full bg-orange-500 shadow-2xl" />
                   </Link>
