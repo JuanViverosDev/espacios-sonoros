@@ -27,6 +27,10 @@ import sanantonio3 from "./assets/img/sanantonio/3.jpg";
 import sanantonio4 from "./assets/img/sanantonio/4.jpg";
 
 import panceAudio from "./assets/sounds/pance.aac";
+import jairovarelaAudio from "./assets/sounds/jairovarela.mp3";
+import sanAntonioAudio from "./assets/sounds/sanantonio.mp3";
+import ermitaAudio from "./assets/sounds/ermita espacio sonoro.mp3";
+import parqueAudio from "./assets/sounds/parque-del-perro.mp3";
 
 export const sites = [
   {
@@ -64,6 +68,7 @@ export const sites = [
         alt: "Parque del perro 5",
       },
     ],
+    audio: parqueAudio,
   },
   {
     id: 2,
@@ -132,6 +137,7 @@ export const sites = [
         alt: "Plazoleta Jairo Varela 4",
       },
     ],
+    audio: jairovarelaAudio,
   },
   {
     id: 4,
@@ -163,6 +169,7 @@ export const sites = [
         alt: "La Ermita 4",
       },
     ],
+    audio: ermitaAudio,
   },
   {
     id: 5,
@@ -194,5 +201,6 @@ export const sites = [
         alt: "San Antonio 4",
       },
     ],
+    audio: sanAntonioAudio,
   },
 ];
