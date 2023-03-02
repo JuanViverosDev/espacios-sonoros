@@ -26,6 +26,8 @@ import sanantonio2 from "./assets/img/sanantonio/2.jpg";
 import sanantonio3 from "./assets/img/sanantonio/3.jpg";
 import sanantonio4 from "./assets/img/sanantonio/4.jpg";
 
+import panceAudio from "./assets/sounds/pance.aac";
+
 export const sites = [
   {
     id: 1,
@@ -98,6 +100,7 @@ export const sites = [
         alt: "Pance 5",
       },
     ],
+    audio: panceAudio,
   },
   {
     id: 3,

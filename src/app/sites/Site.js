@@ -12,11 +12,16 @@ const Site = () => {
   const site = sites.find((site) => site.url === siteId);
   const [currentImg, setCurrentImg] = useState(0);
 
+  const audio = new Audio(site?.audio);
+  audio.play();
+  audio.loop = true;
+
   return (
     <div>
       <Link
         className="text-yellow-400 absolute z-10 m-10 flex items-center cursor-pointer"
         to="/sites"
+        onClick={() => audio.pause()}
       >
         <ArrowLeftCircleIcon className="h-10 w-10 " />
         <h1 className="ml-3 font-semibold text-xl">Mapa</h1>
