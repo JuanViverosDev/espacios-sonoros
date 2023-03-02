@@ -29,7 +29,7 @@ const Site = () => {
           <ArrowLeftCircleIcon className="h-10 w-10 " />
           <h1 className="ml-3 font-semibold text-xl">Mapa</h1>
         </Link>
-        <div className="flex gap-5">
+        {/* <div className="flex gap-5">
           <Link
             className="bg-yellow-400 rounded-2xl text-white p-4 font-black md:my-10 ml-10 flex items-center cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out"
             to={`/sites/${
@@ -46,7 +46,7 @@ const Site = () => {
           >
             Siguiente
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className="md:grid md:grid-cols-4">
         <div className="flex flex-col justify-between h-screen max-h-screen p-20 col-span-2 pt-32">
