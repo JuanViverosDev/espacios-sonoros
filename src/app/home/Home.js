@@ -26,7 +26,8 @@ const Home = () => {
       <img
         src={calimenu}
         alt="Cali fondo"
-        className="absolute -z-10 -top-52 opacity-90 h-full object-cover"
+        style={{ height: "200%" }}
+        className="absolute -z-10 -top-52 opacity-60 md:opacity-90 object-cover"
       />
       <svg
         viewBox="0 0 200 200"
