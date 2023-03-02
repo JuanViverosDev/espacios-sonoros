@@ -18,14 +18,35 @@ const Site = () => {
 
   return (
     <div>
-      <div onClick={() => audio.pause()}>
+      <div
+        onClick={() => audio.pause()}
+        className="flex justify-between w-full absolute z-10"
+      >
         <Link
-          className="text-yellow-400 absolute z-10 m-10 flex items-center cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out"
+          className="text-yellow-400 m-10 flex items-center cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out"
           to="/sites"
         >
           <ArrowLeftCircleIcon className="h-10 w-10 " />
           <h1 className="ml-3 font-semibold text-xl">Mapa</h1>
         </Link>
+        <div className="flex gap-5">
+          <Link
+            className="bg-yellow-400 rounded-2xl text-white p-4 font-black my-10 flex items-center cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out"
+            to={`/sites/${
+              sites[sites.findIndex((site) => site.url === siteId) - 1].url
+            }`}
+          >
+            Anterior
+          </Link>
+          <Link
+            className="bg-yellow-400 rounded-2xl text-white p-4 font-black my-10 mr-10 flex items-center cursor-pointer hover:scale-110 transform transition duration-500 ease-in-out"
+            to={`/sites/${
+              sites[sites.findIndex((site) => site.url === siteId) + 1].url
+            }`}
+          >
+            Siguiente
+          </Link>
+        </div>
       </div>
       <div className="md:grid md:grid-cols-4">
         <div className="flex flex-col justify-between h-screen max-h-screen p-20 col-span-2 pt-32">
