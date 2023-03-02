@@ -1,8 +1,10 @@
 import React from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { useNavigate } from "react-router-dom";
 
 const Sites = () => {
-  const position = [3.4205152, -76.5151578];
+  const navigate = useNavigate();
+  const position = [3.3205152, -76.5151578];
   const sites = [
     {
       id: 1,
@@ -48,11 +50,9 @@ const Sites = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {sites.map((site) => (
-          <Marker key={site.id} position={[site.lat, site.lng]}>
-            <Popup>{site.name}</Popup>
-          </Marker>
-        ))}
+          {sites.map((site) => (
+            <Marker key={site.id} position={[site.lat, site.lng]} onChange={() => navigate('')}/>
+          ))}
       </MapContainer>
     </div>
   );
