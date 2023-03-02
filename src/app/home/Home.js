@@ -31,7 +31,7 @@ const Home = () => {
       <svg
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -top-80 -right-96"
+        className="absolute -top-80 -right-96 -z-10"
         height=""
       >
         <path
